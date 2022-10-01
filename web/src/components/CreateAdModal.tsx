@@ -20,7 +20,7 @@ export function CreateAdModal() {
     const [useVoiceChannel, setUseVoiceChannel] = useState(false)
 
     useEffect(() => {
-        axios('http://localhost:3333/games')
+        axios('https://nlw-e-sports-web-nine.vercel.app/games')
             .then(response => {
                 setGames(response.data)
             })
