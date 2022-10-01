@@ -27,7 +27,7 @@ const prisma = new PrismaClient({
 
 // --exit-child quando usar prisma 
 
-app.get('/games', async (resquest, response) => {
+app.get('/games', async (request, response) => {
   const games = await prisma.game.findMany({
     include: {
       _count: {
