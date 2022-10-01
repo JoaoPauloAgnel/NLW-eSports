@@ -6,7 +6,10 @@
   "scripts": {
     "build": "tsc",
     "dev": "tsnd --exit-child src/server.ts",
-    "postinstall": "prisma generate"
+    "migrate:dev": "prisma migrate dev",
+    "migrate:deploy": "prisma migrate deploy",
+    "migrate:status": "prisma migrate status",
+    "generate": "prisma generate"
   },
   "keywords": [],
   "author": "",
