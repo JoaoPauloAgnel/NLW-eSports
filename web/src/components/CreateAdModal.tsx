@@ -39,7 +39,7 @@ export function CreateAdModal() {
         }
 
         try {
-            await axios.post(`/games/${data.game}/ads`, {
+            await axios.post(`https://nlw-e-sports-web-nine.vercel.app/games/${data.game}/ads`, {
                 name: data.name,
                 yearsPlaying: Number(data.yearsPlaying),
                 discord: data.discord,
