@@ -39,7 +39,7 @@ export function CreateAdModal() {
         }
 
         try {
-            await axios.post(`http://localhost:3333/games/${data.game}/ads`, {
+            await axios.post(`/games/${data.game}/ads`, {
                 name: data.name,
                 yearsPlaying: Number(data.yearsPlaying),
                 discord: data.discord,
